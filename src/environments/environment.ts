@@ -6,10 +6,10 @@ export const environment = {
   helpURL: '',
 
   // =================================== Msal Module ====================================
-  clientId: '{Client_Id}',
+  clientId: '{App_Client_Id}',
   endpoints: {
     graphApiUri: 'https://graph.microsoft.com',
-    loginApiUri: 'https://login.microsoftonline.com/{Hash API - Endpoint}'
+    loginApiUri: 'https://login.microsoftonline.com/{App_Hash_API-Endpoint}'
   },
   popUp: false,
   consentScopes: [
