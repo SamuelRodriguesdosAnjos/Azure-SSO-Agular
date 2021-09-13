@@ -1,0 +1,13 @@
+<div class="layout-wrapper"
+[ngClass]="{'menu-layout-static': true,
+            'menu-layout-overlay': false,
+            'layout-menu-overlay-active': false,
+            'menu-layout-horizontal': true,
+            'menu-layout-slim': false,
+            'layout-menu-static-inactive': false,
+            'layout-menu-static-active': false}">
+
+    <router-outlet></router-outlet>
+    
+    <div class="layout-mask"></div>
+</div>

@@ -1,0 +1,13 @@
+[   
+    { "key": "Hello", "value": "Olá" },
+    { "key": "Back", "value": "Voltar" },   
+    { "key": "Logout", "value": "Sair" },
+    { "key": "SignIn", "value": "Enviar" },
+    { "key": "Help", "value": "Ajuda" },
+    { "key": "ChangeProfile", "value": "Trocar Perfil" },
+    { "key": "ChangeUser", "value": "Trocar Usuário" },
+    { "key": "ChangeApplication", "value": "Trocar Sistema" },
+    { "key": "LoginMsgNoAccessTitle", "value": "Usuário sem permissão." },
+    { "key": "LoginMsgNoAccess", "value": "Não existem acessos disponíveis." },
+    { "key": "Loading", "value": "Carregando" }
+]

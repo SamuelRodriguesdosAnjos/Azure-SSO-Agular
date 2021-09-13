@@ -1,0 +1,72 @@
+<div class="topbar clearfix">
+    <div class="topbar-left">
+        <ul class="topbar-logo-language">
+            <li>
+                <img src="" class="topbar-logo" />
+            </li>
+            <li (click)="loadLanguage('pt-BR')">
+                <img class="langFlag" alt="Português" title="Português" src="assets/layout/images/bandeira-br.png" />
+            </li>
+            <li (click)="loadLanguage('en-US')">
+                <img class="langFlag" alt="English" title="English" src="assets/layout/images/bandeira-usa.png" />
+            </li>
+        </ul>
+        <ul class="topbar-items fadeInDown topbar-profile" [ngClass]="{'topbar-items-visible': false}">
+            <li #profile class="profile-item" (click)="showOrHideTopMenu()" [ngClass]="{'active-top-menu': topMenuClass}">
+
+                <div class="profile-display-name-container">
+                    <div class="profile-display-name">
+                        <span class="topbar-item-name" style="color: black;">
+                                {{ translate('Hello') }}, {{ userInfo.displayName }}
+                        </span>
+                        <br />
+                        <span *ngIf="profileDisplayName" class="topbar-item-name" style="color: black;">
+                            {{ translate(profileDisplayName) }}
+                        </span>
+                    </div>
+                    <div class="profile-image-container">
+                        <img class="profile-image" src="{{ userInfo.avatar }}" />
+                    </div>
+                </div>
+                
+                <ul *ngIf="showMenuItems" class="layout-menu fadeInDown menuItem">
+                    <li role="menuitem">
+                        <div class="menu-item-custom" (click)="openHelpURL()">
+                            <fa-icon [icon]="faQuestionCircle"></fa-icon>
+                            {{ translate('Help') }}
+                        </div>
+                    </li>
+                    <li *ngIf="showMenuItemApplication && applicationDisplayName" role="menuitem">
+                        <div class="menu-item-custom" (click)="changeApplication()">
+                            <fa-icon [icon]="faRetweet"></fa-icon>
+                            {{ translate('ChangeApplication') }}
+                        </div>
+                    </li>
+                    <li *ngIf="showMenuItemProfile && profileDisplayName" role="menuitem">
+                        <div class="menu-item-custom" (click)="changeProfile()">
+                            <fa-icon [icon]="faUserFriends"></fa-icon>
+                            {{ translate('ChangeProfile') }}
+                        </div>
+                    </li>
+                    <li role="menuitem">
+                        <div class="menu-item-custom" (click)="logout()">
+                            <fa-icon [icon]="faUser"></fa-icon>
+                            {{ translate('ChangeUser') }}
+                        </div>
+                    </li>
+                    <li role="menuitem">
+                        <div class="menu-item-custom" (click)="logout()">
+                            <fa-icon [icon]="faSignInAlt"></fa-icon>
+                            {{ translate('Logout') }}
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="topbar-application">
+            <li *ngIf="applicationDisplayName">
+                {{ applicationDisplayName }}
+            </li>
+        </ul>
+    </div>
+</div>

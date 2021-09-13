@@ -1,0 +1,13 @@
+[    
+    { "key": "Hello", "value": "Hello" },
+    { "key": "Back", "value": "Back" },   
+    { "key": "Logout", "value": "Logout" },
+    { "key": "SignIn", "value": "SignIn" },
+    { "key": "Help", "value": "Help" },
+    { "key": "ChangeProfile", "value": "Change Profile" },
+    { "key": "ChangeUser", "value": "Change User" },
+    { "key": "ChangeApplication", "value": "Change Application" },
+    { "key": "LoginMsgNoAccessTitle", "value": "User without permission." },
+    { "key": "LoginMsgNoAccess", "value": "There are no accesses available." },
+    { "key": "Loading", "value": "Loading" }
+]

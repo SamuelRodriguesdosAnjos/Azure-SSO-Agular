@@ -1,0 +1,57 @@
+<app-topbar 
+    [profileDisplayName]="profileDisplayName"
+    [applicationDisplayName]="applicationDisplayName"
+    [showMenuItems]="true"
+    [showMenuItemApplication]="false"
+    [showMenuItemProfile]="userGroups.length > 1" 
+    (eventChangeProfile)="changeProfile()" 
+    (eventChangeApplication)="changeApplication()">
+</app-topbar>
+
+<div class="layout-main">
+    <block-ui>
+        <div class="dashboard escolha_perfil">
+
+            <!-- CARD APLICAÇÃO PÓS LOGIN -->
+            <div class="ui-g overview-boxes poslogin" *ngIf="!applicationSelected && applicationsDetails && applicationsDetails.length > 0">
+                
+                <div class="ui-g-12 ui-md-4 ui-lg-2" style="margin-top: 5%;" *ngFor="let item of applicationsDetails">
+                    <div class="ui-g overview-box box-items" style="cursor:pointer" (click)="clickApplication(item)">
+                        <div class="overview-box-title">
+                        </div>
+                        <div class="overview-box-count">{{ item.displayName }}</div>
+                    </div>
+                </div>
+
+            </div> 
+            <!-- CARD APLICAÇÃO PÓS LOGIN -->
+
+            <!-- CARD PERFIL PÓS LOGIN -->
+            <div class="ui-g overview-boxes poslogin" *ngIf="applicationSelected && !permissionSelected && groupsDetails && groupsDetails.length > 0">
+                
+                <div class="ui-g-12 ui-md-4 ui-lg-2" style="margin-top: 2%;" *ngFor="let item of groupsDetails">
+                    <div class="ui-g overview-box box-items" style="cursor:pointer" (click)="clickPermission(item)">
+                        <div class="overview-box-title">
+                            <span style="font-size: 100px; color: #fff;">
+                                <fa-icon [icon]="getIconsProfile(item.key)"></fa-icon>
+                            </span>
+                        </div>
+                        <div class="overview-box-count">
+                            {{ translate(item.displayName) }}
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+            <!-- CARD PERFIL PÓS LOGIN -->
+
+            <!-- IFRAME -->
+            <div class="iframe-content" *ngIf="applicationSelected && permissionSelected && url !== null">
+                <iframe id="iframe-id" width="100%" height="{{ heightViewport }}" [src]="url" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                </iframe>
+            </div>
+            
+        </div>
+    </block-ui>
+</div>
+        

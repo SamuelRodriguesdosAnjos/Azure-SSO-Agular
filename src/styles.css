@@ -1,0 +1,119 @@
+
+/* GERAL */
+.iframe-content {
+    height: 478px;
+}
+.layout-wrapper .layout-footer {padding: 15px 20px 10px 20px;box-shadow: none;background: white;text-align: center;}
+
+.profile-display-name-container {
+    height: 55px; 
+    width: 280px; 
+    text-align: center;
+}
+
+.profile-display-name {
+    width: 70%; 
+    float: left; 
+    padding: 13px !important;
+}
+
+.profile-image-container {
+    border-radius: 100px;
+    width: 30%; 
+    float: left; 
+    padding: 4px; 
+    border-radius: 100px;
+}
+
+.profile-image {
+    border-radius: 100px;
+    width: 45px !important;
+    height: 45px !important;
+}
+
+.layout-wrapper.menu-layout-horizontal .topbar .topbar-right, .layout-wrapper.menu-layout-horizontal .topbar .topbar-left {background: white !important}
+
+.layout-wrapper.menu-layout-horizontal .layout-main {padding-top: 80px}
+
+.botao-padrao {border-radius: 100px; padding:10px 30px;font-size: 14px}
+
+/* .topbar-left {width: 400px !important} */
+.topbar-left {width: 100% !important}
+.topbar-logo {width:80px !important; float: left;}
+.topbar-left ul {float: left;margin: 0;}
+.topbar-left ul li {list-style: none; float:left;margin-right: 15px;}
+.topbar-left ul li img {width: 25px;}
+
+.topbar-logo-language {min-width: 210px;}
+.topbar-profile {margin: -12px -15px 0 0 !important; cursor: pointer !important; float: right !important; min-width: 310px; width: 42% !important;}
+.topbar-application {min-width: 230px; float: right !important;}
+.topbar-application li {font-size: 25px; width: 100%; text-align: center; font-weight: bold; color: #c43150 !important;}
+
+.menuItem li {width: 100%;}
+
+/* ESCOLHA PERFIL */
+.escolha_perfil .svg-inline--fa {color: #c43150;font-size: 60px;}
+.escolha_perfil .overview-box-count {margin: 0; color: #414141;}
+.escolha_perfil .box-items {background: #fff;box-shadow: 0px 2px 10px #ccc;border: none;border-radius: 8px;}
+.escolha_perfil .box-items:hover {background: #f1f1f1 !important;}
+
+/* TÍTULO PAGINA + BREADCUMBS */
+.faixacinza a {color: #c43150}
+.faixacinza h1 {margin-top: 10px;color: #c43150}
+.faixacinza .right {text-align: right;padding-top: 25px;}
+.faixacinza strong {background:#414042;padding: 15px 30px;margin-left: 20px;color: #fff;border-radius: 60px;}
+
+/* POS LOGIN */
+.poslogin { padding:60px; }
+.poslogin .overview-box {padding-bottom:30px; text-align: center}
+.poslogin .overview-box-title img {width: 100%}
+.poslogin .overview-box-title .svg-inline--fa {vertical-align: 0.2em;}
+.poslogin .overview-box-count {margin:-20px 0 10px 0;color: #414141 !important;font-size: 18px !important;}
+.poslogin .overview-box .botao-padrao {background: none !important;border: solid 1px #fff !important;;margin: 0 auto;color: #fff;}
+.poslogin .overview-box .botao-padrao:hover {background: #fff !important; color:#414042}
+
+.poslogin .box-items {
+    background: fff; 
+    border: none !important; 
+    height: 100%;
+    
+}
+
+.poslogin .box-items:hover {
+    background: #eee; 
+    height: 100%;
+}
+
+
+.poslogin .box-salas {background: #faa61a}
+.poslogin .box-3a {background: #27a5a2}
+
+/* ALOCAR DOCENTE */
+.selecionarcursos .overview-box {padding-bottom:25px; text-align: center}
+.selecionarcursos .overview-box-title img {width: 100%}
+.selecionarcursos .overview-box-count {margin:15px 0 5px 0; color:#414042 !important; font-size:18px !important }
+.selecionarcursos .escolher-curso {width: 100%;}
+.selecionarcursos .alocacoes-abertas {font-size: 14px; width: 100%;margin-bottom: 20px;color:#414042}
+.selecionarcursos .alocacoes-abertas span {color: #c43150; font-weight: 500}
+.selecionarcursos .box-cursos {background: #fff;color: #414042; text-align: center;}
+
+
+/* SEM ACESSO */
+.exception-body.access {background-size:100%; background-position: center center}
+.ui-button {background: #c43150 !important}
+.exception-text {color:#414042 !important}
+.exception-body .exception-text .exception-box {color: #ffffff;background-color: #c4314f;margin-left: 10px;}
+.layout-main {padding: 0 !important; }
+.exception-text {height: 1000px;padding-top: 100px !important;}
+
+.langFlag:hover {cursor: pointer; border-width: 1px; border-color: white; border-style: solid; border-radius: 100px;}
+
+.menu-item-custom {
+    width: 100%;
+    height: 30px;
+    padding: 8px;
+}
+
+.menu-item-custom:hover {
+    background-color: silver;
+}

@@ -1,0 +1,14 @@
+[    
+    { 
+        "key": "App_Admin",
+        "displayName": "Admin", 
+        "description": "", 
+        "urlImage": "" 
+    },
+    { 
+        "key": "App_User",
+        "displayName": "User", 
+        "description": "", 
+        "urlImage": "" 
+    }
+]
